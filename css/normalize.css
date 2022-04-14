@@ -48,7 +48,7 @@ h1{
 }
 .search__bar input{
     padding: 0 40px;
-    border: 1px solid#F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 ::placeholder{
     color: black;
@@ -212,3 +212,36 @@ h1{
 .etoile{
     margin-top: 60px;
 }
+/* Activité a Marseille */
+
+.activite__container{
+    display: flex;
+    gap: 50px;
+    border: 1px solid red;
+    height: 500px;
+}
+.container__child{
+    display: flex;
+    object-fit: contain;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    flex-basis: 50%;
+    border:1px solid black;
+    box-sizing: content-box;
+    
+}
+
+.container__child  img{
+    border-radius: 20px 20px 0 0 ;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container__child  p{
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 1.0px;
+    
+}
+
