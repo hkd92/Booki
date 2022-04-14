@@ -218,18 +218,17 @@ h1{
     display: flex;
     gap: 50px;
     border: 1px solid red;
-    height: 500px;
 }
 .container__child{
     display: flex;
-    object-fit: contain;
     flex-direction: column;
-    width: 400px;
-    height: 600px;
+    gap: 20px;
+    box-sizing:content-box;
+    
+}
+.container__child  div{
+    border: 1px solid black;
     border-radius: 20px;
-    flex-basis: 50%;
-    border:1px solid black;
-    box-sizing: content-box;
     
 }
 
@@ -237,6 +236,7 @@ h1{
     border-radius: 20px 20px 0 0 ;
     max-width: 100%;
     max-height: 100%;
+    flex: 1;
 }
 .container__child  p{
     padding: 10px;
