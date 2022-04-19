@@ -248,5 +248,27 @@ h1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border: 1px solid red;
+    gap: 50px
+}
+.activite__container *{
+    border:  1px solid blue;
+    background-color: aqua;
+}
+.child__1{
+    grid-row: 1/4;
+}
+.child__2{
+    grid-row: span 2;
+}
+.child__3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.child__4{
+    grid-column: 3/ 4;
+    grid-row: 1/ span 3;
+}
+.child__6{
+    grid-row: span 2;
 }
 
