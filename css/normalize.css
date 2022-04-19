@@ -213,7 +213,7 @@ h1{
     margin-top: 60px;
 }
 /* Activité a Marseille */
-
+/*
 .activite__container{
     display: flex;
     gap: 50px;
@@ -226,22 +226,27 @@ h1{
     box-sizing:content-box;
     
 }
-.container__child  div{
+.container__child > div{
     border: 1px solid black;
     border-radius: 20px;
-    
 }
 
 .container__child  img{
     border-radius: 20px 20px 0 0 ;
     max-width: 100%;
     max-height: 100%;
-    flex: 1;
+    flex: 50%;
 }
 .container__child  p{
     padding: 10px;
     font-weight: bold;
     margin-top: 1.0px;
     
+}
+*/
+.activite__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid red;
 }
 
