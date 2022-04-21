@@ -122,102 +122,69 @@ h1{
 /*--------Hebergement__card--------*/
 .hebergement__card{
     display: flex;
-    gap: 50px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-
+    gap: 20px;
+}
+.hebergement__card > div{
+    background-color: #F2F2F2;
+    border-radius: 20px ;
+    padding: 0 20px;
 }
 .hebergement{
+    flex-basis: 70%; 
+}
+.heb__card {
     display: flex;
-    background-color: #F2F2F2;
-    border-radius: 20px;
+    flex-direction: row;
+    gap: 10px;
     flex-wrap: wrap;
-    padding: 30px;
-    flex-basis: 70%;
-    
-   
+    flex-basis: 30%;
+    justify-content: center;
+}
+.heb__card div{
+    border-radius: 15px;
+    background-color: white;
+}
+.card h4, .prix, .etoile{
+    padding-left: 10px;  
+    margin-top: 0;
+    font-size: small;
+}
+.card .etoile{
+    color: #0065FC;
+    margin-bottom: 5px;
+}
+.prix em{
+    font-weight: bold;
+    font-style: normal;
 }
 
-.card__image{
-    flex-basis: 27%;
-    border-radius: 20px;
-    padding: 3px;
-    background-color: white;
-    box-shadow: 0 0 18px #f2f2f200;
-    
-}
+
 /*-----images Hébergements à Marseille-----*/
-.card__image img{
-    height: 170px;
-    width: 270px;
-    border-radius: 20px 20px 0 0;
-    object-fit:cover;
+.card  img{
+    height: 100px;
+    width: 190px;
+    box-sizing: content-box;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 15px 15px 0 0 ;
 }
-.card__image h3 , .card__image p{
-    margin: 0.5px;
-}
-.card__image i{
-    color: #0065FC;
-}
-.card__flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.afficher{
-    font-weight: bold;
+.card > *{
+  margin-bottom: 0;  
+    
 }
 /*------mise en forme populaire ( trend)*/
-.title__populaire{
+
+.pop__card{
     display: flex;
-    align-items: center;
-    justify-content:space-between;
-    
-}
-
-.populaire{
-    border-radius: 20px;
-    background-color: #F2F2F2;
-    flex-basis: 30%;
-    padding: 30px;
-}
-
-.card__populaire{
-    display:flex;
     flex-direction: column;
-    gap : 30px; 
-}
-.populaire__img{
-    border-radius: 20px;
-    display: flex;
-    padding: 5px;
+    padding: 10px;
     gap: 10px;
-    background-color: white;
+}
+.pop__card > div{
+    border: 1px solid blue;
     
-
 }
-.populaire__img img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
-.test{
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    align-items:baseline
-
-}
-.test i{
-    color: #0065FC;
-}
-.test h3 ,.prix{
-    margin: 0.7px;
-}
-.etoile{
-    margin-top: 60px;
-}
+/* activite ---------------------------------------*/
 
 .activite__container{
     display: grid;
