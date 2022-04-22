@@ -137,12 +137,15 @@ h1{
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    flex-basis: 30%;
     justify-content: center;
 }
-.heb__card div{
+.card{
     border-radius: 15px;
     background-color: white;
+    box-shadow: 5px 5px 5px #e3dfdf;
+    padding: 5px;
+    border: 1px solid blue;
+    flex:1 30%;
 }
 .card h4, .prix, .etoile{
     padding-left: 10px;  
@@ -162,15 +165,14 @@ h1{
 /*-----images Hébergements à Marseille-----*/
 .card  img{
     height: 100px;
-    width: 190px;
+    width: 100%;
     box-sizing: content-box;
     object-fit: cover;
-    padding: 5px;
+    object-position: center;
     border-radius: 15px 15px 0 0 ;
 }
 .card > *{
-  margin-bottom: 0;  
-    
+  margin-bottom: 0; 
 }
 /*------mise en forme populaire ( trend)*/
 
@@ -181,8 +183,17 @@ h1{
     gap: 10px;
 }
 .pop__card > div{
-    border: 1px solid blue;
-    
+    border: 1px solid blue;  
+}
+.pop__card img{
+    height: 100px;
+    width: 90px;
+    box-sizing: content-box;
+    object-fit:cover;
+}
+.pop__struct{
+    display: flex;
+    flex-direction: row;
 }
 /* activite ---------------------------------------*/
 
@@ -269,3 +280,16 @@ footer{
     margin: 5px; 
 }
 
+/* breakpoint*/
+
+@media screen  and (max-width:768px ){
+    .card{
+        flex: 1 200px;
+        min-width: 350px;
+        max-width: 350px;
+    }
+    .card  img{
+        object-fit:cover;
+        object-position: center;
+    }
+}
