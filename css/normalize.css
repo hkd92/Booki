@@ -124,13 +124,20 @@ h1{
     display: flex;
     gap: 20px;
 }
-.hebergement__card > div{
+.hebergement__card .hebergement, .populaire{
     background-color: #F2F2F2;
     border-radius: 20px ;
     padding: 0 20px;
 }
 .hebergement{
     flex-basis: 70%; 
+}
+.heb__card h3{
+    flex-basis: 100%;
+}
+.foot__heb{
+    flex-basis: 100%;
+    font-weight: bolder;
 }
 .heb__card {
     display: flex;
@@ -144,7 +151,6 @@ h1{
     background-color: white;
     box-shadow: 5px 5px 5px #e3dfdf;
     padding: 5px;
-    border: 1px solid blue;
     flex:1 30%;
 }
 .card h4, .prix, .etoile{
@@ -155,10 +161,6 @@ h1{
 .card .etoile{
     color: #0065FC;
     margin-bottom: 5px;
-}
-.prix em{
-    font-weight: bold;
-    font-style: normal;
 }
 
 
@@ -174,28 +176,61 @@ h1{
 .card > *{
   margin-bottom: 0; 
 }
-/*------mise en forme populaire ( trend)*/
-
+/*_____________trend and title and footer________*/
+.populaire h3{
+    display: flex;
+    justify-content: space-between;
+}
+/*_________mise en forme populaire_____*/
+.populaire{
+    flex-basis: 30%; 
+}
 .pop__card{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    flex-basis: 30%;
     gap: 10px;
+    padding: 10px 0;
 }
 .pop__card > div{
-    border: 1px solid blue;  
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    border-radius: 15px;
+    min-width: 300px;
 }
-.pop__card img{
-    height: 100px;
-    width: 90px;
-    box-sizing: content-box;
-    object-fit:cover;
+.pop__struct img{
+    height: 130px;
+    width: 100%;
+    max-height: 100%;
+    flex-basis: 50%;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    object-position:left;
 }
 .pop__struct{
     display: flex;
-    flex-direction: row;
+    gap: 10px;
 }
-/* activite ---------------------------------------*/
+.flex__pop{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+.flex__pop *{
+    font-size: small;
+}
+.etoile__pop{
+    color: #0065FC;
+}
+.flex__pop h4{
+    margin-bottom: 0;
+}
+
+
+/*___________activite ____________*/
 
 .activite__container{
     display: grid;
@@ -282,7 +317,7 @@ footer{
 
 /* breakpoint*/
 
-@media screen  and (max-width:768px ){
+@media (max-width:768px ){
     .card{
         flex: 1 200px;
         min-width: 350px;
@@ -292,4 +327,19 @@ footer{
         object-fit:cover;
         object-position: center;
     }
+
+    .hebergement__card .hebergement{
+        background-color: white;
+    }
+    .hebergement__card{
+        flex-direction: column;
+    }
+    .hebergement{
+        order: 1;
+    }
+    .heb__card h3 , .foot__heb{
+        flex-basis:50%;
+        
+    }
+
 }
