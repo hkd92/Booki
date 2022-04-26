@@ -21,7 +21,7 @@ header{
 .header__nav a{
     padding: 40px;
 }
-.header__nav a:hover{
+.header__nav a:active{
     border-top: 2px solid #0065FC;
 }
 .header__nav{
@@ -95,6 +95,7 @@ h1{
     border-radius: 50%;
     background-color: #DEEBFF;
     margin: -0.8px;
+    text-align: center;
     
 }
 .filtre__name span{
@@ -120,11 +121,11 @@ h1{
     justify-content: center;
 }
 /*--------Hebergement__card--------*/
-.hebergement__card{
+#hebergement__card{
     display: flex;
     gap: 20px;
 }
-.hebergement__card .hebergement, .populaire{
+#hebergement__card .hebergement, .populaire{
     background-color: #F2F2F2;
     border-radius: 20px ;
     padding: 0 20px;
@@ -139,6 +140,7 @@ h1{
 .foot__heb{
     flex-basis: 100%;
     font-weight: bolder;
+    margin-top: 15px;
 }
 .heb__card {
     display: flex;
@@ -151,8 +153,11 @@ h1{
     border-radius: 15px;
     background-color: white;
     box-shadow: 5px 5px 5px #e3dfdf;
-    padding: 5px;
     flex:1 30%;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid white;
+
 }
 .card h4, .prix, .etoile{
     padding-left: 10px;  
@@ -172,7 +177,7 @@ h1{
     box-sizing: content-box;
     object-fit: cover;
     object-position: center;
-    border-radius: 15px 15px 0 0 ;
+    
 }
 .card > *{
   margin-bottom: 0; 
@@ -192,7 +197,6 @@ h1{
     flex-basis: 30%;
     gap: 10px;
     padding: 10px 0;
-    border: 1px solid red;
     box-sizing: content-box;
 }
 .pop__card > div{
@@ -221,6 +225,7 @@ h1{
     flex-wrap: nowrap;
     flex-basis: 50%;
     justify-content: flex-end;
+    border: 1px solid blue;
 }
 .flex__pop *{
     font-size: small;
@@ -328,10 +333,10 @@ footer{
         object-position: center;
     }
 
-    .hebergement__card .hebergement{
+    #hebergement__card .hebergement{
         background-color: white;
     }
-    .hebergement__card{
+    #hebergement__card{
         flex-direction: column;
     }
     .hebergement{
