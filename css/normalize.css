@@ -240,16 +240,25 @@ h1{
 /*___________activite ____________*/
 
 .activite__container{
- background-color: teal;
+ 
  margin-bottom: 50px;
  display: grid;
  gap: 10px;
  grid-template-columns: repeat(4, 1fr);
- grid-template-rows: 60% 40%;
+ grid-template-rows: 0.2fr 0.1fr 0.2fr ;
  grid-template-areas: 
  "big1 medium1 big2 small2"
+ "big1 medium1 big2 medium2"
  "big1 small1 big2  medium2"
+ 
  ;
+}
+.child__card{
+    padding-bottom: 30px ;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #F2F2F2;
 }
 .child__card:nth-child(1){
     grid-area: big1;
@@ -269,17 +278,17 @@ h1{
 .child__card:nth-child(6){
     grid-area: medium2;
 }
-
-.activite__container  div{
-    border: 1px solid black;
-  background-color: tomato;
+.child__card p{
+    font-size: small;
+    margin: 10px 0 0 10px;
     
 }
 .child__card img{
     display:block;
-    height:90%;
+    height:100%;
     width: 100%;
     object-fit: cover;
+    
 }
 .child__card *{
     box-sizing: content-box;
@@ -331,21 +340,21 @@ footer{
     }
     
     .activite__container{
-        background-color: teal;
         margin-bottom: 50px;
         display: grid;
         gap: 10px;
+        margin: 0 20px;
         grid-template-columns:100%;
-        grid-template-rows:repeat(auto, 5);
+        grid-template-rows:repeat(6, 0.2fr);
         grid-template-areas: 
         'big1' 
         'medium1'
         'small1' 
         'big2'
         'small2 '
-        'medium2';
-        
+        'medium2';     
        }
+      
      
 }
 @media(max-width:810px){
