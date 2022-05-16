@@ -245,7 +245,7 @@ h1{
  display: grid;
  gap: 10px;
  grid-template-columns: repeat(4, 1fr);
- grid-template-rows: 0.2fr 0.1fr 0.2fr ;
+ grid-template-rows: 0.4fr 0.09fr 0.4fr;
  grid-template-areas: 
  "big1 medium1 big2 small2"
  "big1 medium1 big2 medium2"
@@ -259,6 +259,7 @@ h1{
     overflow: hidden;
     position: relative;
     border: 1px solid #F2F2F2;
+    box-shadow: 5px 5px 5px #e3dfdf;
 }
 .child__card:nth-child(1){
     grid-area: big1;
@@ -306,13 +307,15 @@ footer{
     max-width: 992px;
     padding: 0 ;
     gap: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
         
 }
 .footer__card p {
     margin: 5px; 
 }
 
-/* breakpoint*/
+/*__________________ breakpoint_______________*/
 
 
 @media screen and (max-width: 810px){
