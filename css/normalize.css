@@ -301,16 +301,14 @@ footer{
     background-color: #F2F2F2;
     margin: 0;
 }
-.footer__card{
+.footer__card {
     display: flex;
-    margin: 0 auto;
-    max-width: 992px;
-    padding: 0 ;
-    gap: 150px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
+    align-items: center;
         
 }
+
 .footer__card p {
     margin: 5px; 
 }
@@ -345,7 +343,6 @@ footer{
 }
 
 @media screen and (max-width:768px ){
-    
     .card  img{
         object-fit:cover;
         object-position: center;
@@ -355,8 +352,7 @@ footer{
         background-color: white;
     }
     #hebergement__card{
-        flex-direction: column;
-        
+        flex-direction: column;       
     }
     .hebergement{
         order: 1;
@@ -384,7 +380,17 @@ footer{
         'big2'
         'small2 '
         'medium2';     
-       }
-      
-     
+    }
+
+    .footer__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer__card > *{
+        flex-basis: 100%;
+        padding: 0 30px;
+    }        
+
 }
