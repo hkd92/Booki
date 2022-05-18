@@ -21,7 +21,7 @@ header{
 .header__nav a{
     padding: 40px;
 }
-.header__nav a:active{
+.header__nav a:hover{
     border-top: 2px solid #0065FC;
 }
 .header__nav{
@@ -62,7 +62,7 @@ h1{
     font-size: medium;
     
 }
-.search__bar button{
+.search__bar .search__button{
     border-radius: 0 12px 12px 0;
     background: #0065FC;
     border: none;
@@ -207,7 +207,7 @@ h1{
 }
 .pop__struct img{
     height: 130px;
-    width: 100%;
+    min-width: 40%;
     max-height: 100%;
     flex-basis: 50%;
     padding: 5px;
@@ -300,18 +300,19 @@ h1{
 footer{
     background-color: #F2F2F2;
     margin: 0;
+   
 }
 .footer__card {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: center;
-        
+    align-items:baseline;
+    justify-content: space-around;
+    
+    padding-bottom: 30px;
+    width: 80%;
+    margin-left: 60px;
 }
 
-.footer__card p {
-    margin: 5px; 
-}
 
 /*__________________ breakpoint_______________*/
 

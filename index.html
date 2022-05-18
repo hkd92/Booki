@@ -24,11 +24,14 @@
     <main>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="parag__h1">En plein centre ville ou en pleine nature</p>
-        <div class="search__bar">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Marseille, France">
-            <button><span>Rechercher</span></button>
-        </div>
+
+        <form action="dataBase.php" method="post" class="form__marseille">
+            <div class="search__bar">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher" class="search__button">
+            </div>
+        </form>
         <div class="filtre">
             <h4>Filtres</h4>
             <div class="filtre__name">
