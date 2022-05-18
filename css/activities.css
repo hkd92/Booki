@@ -1,0 +1,56 @@
+.activite__container{
+ 
+    margin-bottom: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.4fr 0.09fr 0.4fr;
+    grid-template-areas: 
+    "big1 medium1 big2 small2"
+    "big1 medium1 big2 medium2"
+    "big1 small1 big2  medium2"
+    
+    ;
+   }
+   .child__card{
+       padding-bottom: 30px ;
+       border-radius: 10px;
+       overflow: hidden;
+       position: relative;
+       border: 1px solid #F2F2F2;
+       box-shadow: 5px 5px 5px #e3dfdf;
+   }
+   .child__card:nth-child(1){
+       grid-area: big1;
+   }
+   .child__card:nth-child(2){
+        grid-area: medium1;
+   }
+   .child__card:nth-child(3){
+      grid-area: small1;
+   }
+   .child__card:nth-child(4){
+     grid-area: big2;
+   }
+   .child__card:nth-child(5){
+       grid-area: small2;
+   }
+   .child__card:nth-child(6){
+       grid-area: medium2;
+   }
+   .child__card p{
+       font-size: small;
+       margin: 10px 0 0 10px;
+       
+   }
+   .child__card img{
+       display:block;
+       height:100%;
+       width: 100%;
+       object-fit: cover;
+       
+   }
+   .child__card *{
+       box-sizing: content-box;
+       height: 100%;
+   }

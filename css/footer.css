@@ -1,0 +1,15 @@
+footer{
+    background-color: #F2F2F2;
+    margin: 0;
+   
+}
+.footer__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:baseline;
+    justify-content: space-around;
+    
+    padding-bottom: 30px;
+    width: 80%;
+    margin-left: 60px;
+}

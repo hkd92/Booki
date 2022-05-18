@@ -1,0 +1,23 @@
+header{
+    margin: 0 auto;
+    max-width: 992px;
+}
+.header__nav a{
+    padding: 40px;
+}
+.header__nav a:hover{
+    border-top: 2px solid #0065FC;
+}
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-right: auto;
+    height: 50px;
+}
+.hebergement--nav{
+    color: #0065FC;
+}

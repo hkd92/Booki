@@ -1,3 +1,4 @@
+/*-----Search bar----------------*/
 .search__bar{
     display: flex;
 }
@@ -16,7 +17,7 @@
     font-size: medium;
     
 }
-.search__bar button{
+.search__bar .search__button{
     border-radius: 0 12px 12px 0;
     background: #0065FC;
     border: none;

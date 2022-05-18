@@ -1,0 +1,114 @@
+#hebergement__card{
+    display: flex;
+    gap: 20px;
+}
+#hebergement__card .hebergement, .populaire{
+    background-color: #F2F2F2;
+    border-radius: 20px ;
+    padding: 0 20px;
+}
+.hebergement{
+    flex-basis: 70%;
+ 
+}
+.heb__card h3{
+    flex-basis: 100%;
+}
+.foot__heb{
+    flex-basis: 100%;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.heb__card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #e3dfdf;
+    flex:1 30%;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid white;
+
+}
+.card h4, .prix, .etoile{
+    padding-left: 10px;  
+    margin-top: 0;
+    font-size: small;
+}
+.card .etoile{
+    color: #0065FC;
+    margin-bottom: 5px;
+}
+
+
+/*-----images Hébergements à Marseille-----*/
+.card  img{
+    height: 100px;
+    width: 100%;
+    box-sizing: content-box;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.card > *{
+  margin-bottom: 0; 
+}
+/*_____________trend and title and footer________*/
+.populaire h3{
+    display: flex;
+    justify-content: space-between;
+}
+/*_________mise en forme populaire_____*/
+.populaire{
+    flex-basis: 30%; 
+}
+.pop__card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    gap: 10px;
+    padding: 10px 0;
+    box-sizing: content-box;
+}
+.pop__card > div{
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    border-radius: 15px;
+    min-width: 300px;
+}
+.pop__struct img{
+    height: 130px;
+    min-width: 40%;
+    max-height: 100%;
+    flex-basis: 50%;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    object-position:left;
+}
+.pop__struct{
+    display: flex;
+    gap: 10px;
+}
+.flex__pop{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+.flex__pop *{
+    font-size: small;
+}
+.etoile__pop{
+    color: #0065FC;
+}
+.flex__pop h4{
+    margin-bottom: 0;
+}
