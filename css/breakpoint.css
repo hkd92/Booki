@@ -75,5 +75,21 @@
         flex-basis: 100%;
         padding: 0 30px;
     }        
-
+    .header__nav{
+        justify-content: center;
+    }
+    .nav__heb{
+        flex-basis: 100%;
+    }
+    .logo{
+        margin-top: 20px;
+    }
+    .nav__heb a{
+        flex-basis: 50%;
+        text-align: center;    
+    }
+    .header__nav a:hover{
+        border-bottom: 2px solid #0065FC;
+        border-top-color: transparent;
+    }
 }
