@@ -92,4 +92,17 @@
         border-bottom: 2px solid #0065FC;
         border-top-color: transparent;
     }
+    .form__marseille *{
+        box-sizing: content-box;
+        padding: 10px 15px;
+        width: 100%;
+    }
+    .search__placeholder{
+        flex-basis: 100%;
+    }
+    .filtre h4{
+        flex-basis: 100%;
+    }
+    
+    
 }

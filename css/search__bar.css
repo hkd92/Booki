@@ -1,15 +1,24 @@
 /*-----Search bar----------------*/
-.search__bar{
+.form__marseille{
     display: flex;
+    align-items: center;
+    
 }
-.search__bar i{
-    padding: 17px;
+.form__marseille  *{
+    box-sizing: content-box;
+    padding: 10px 15px;
+    font-size: medium;
+    height: 20px;
+}
+.form__marseille > i{
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
+    flex-basis: 10px;
+    
 }
-.search__bar input{
-    padding: 0 40px;
+.form__marseille .search__placeholder{
     border: 1px solid #F2F2F2;
+    flex-basis: 10%;
 }
 ::placeholder{
     color: black;
@@ -17,13 +26,13 @@
     font-size: medium;
     
 }
-.search__bar .search__button{
+.form__marseille .search__button{
     border-radius: 0 12px 12px 0;
     background: #0065FC;
     border: none;
-    font-size: medium;
     color: #F2F2F2;
     font-weight: bold;
-    padding: 0 30px;
+    flex-basis: 10%;
     cursor:pointer;
+    
 }
