@@ -103,6 +103,18 @@
     .filtre h4{
         flex-basis: 100%;
     }
-    
-    
+    i.fa-solid.fa-magnifying-glass{
+        display: inline;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 10px;
+        flex-basis: 10px; 
+    }
+    .search__button{
+        display: none;
+    }
+    .search__placeholder{
+        flex-basis: 30%;
+        margin-right: -40px;
+    }
 }
