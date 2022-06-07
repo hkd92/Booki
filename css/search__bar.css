@@ -27,7 +27,6 @@ i.fa-solid.fa-magnifying-glass{
     color: black;
     font-weight: bold;
     font-size: medium;
-    
 }
 .form__marseille .search__button{
     border-radius: 0 12px 12px 0;
@@ -38,4 +37,6 @@ i.fa-solid.fa-magnifying-glass{
     flex-basis: 10%;
     cursor:pointer;   
 }
-
+.search__placeholder:focus{
+  outline-color: transparent;
+}
