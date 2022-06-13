@@ -4,7 +4,7 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.4fr 0.09fr 0.4fr;
+    grid-template-rows: 150px 0.09fr 150px;
     grid-template-areas: 
     "big1 medium1 big2 small2"
     "big1 medium1 big2 medium2"
