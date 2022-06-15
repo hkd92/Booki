@@ -26,3 +26,7 @@
     padding: 10px;
     font-weight: bold;
 }
+.filtre__name:hover{
+ background-color: #0065FC;
+ color: #F2F2F2;  
+}
