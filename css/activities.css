@@ -52,7 +52,7 @@
    }
    .child__card *{
        box-sizing: content-box;
-       height: 100%;
+       
    }
    .activite__container p{
        font-weight: bold;

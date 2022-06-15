@@ -117,7 +117,6 @@
     }
     
     .search__placeholder{
-        flex-basis: 30%;
         margin-right: -40px;
     }
     .populaire{border-radius:0;}

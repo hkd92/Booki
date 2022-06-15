@@ -9,7 +9,7 @@ footer{
     flex-wrap: wrap;
     align-items:baseline;
     margin: 0 auto;
-    justify-content: space-around; 
+    justify-content: space-between; 
     padding-bottom: 30px; 
     
 }
