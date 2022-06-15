@@ -30,3 +30,6 @@ header{
 .nav__heb{  
     display: flex;
 }
+.nav__heb a{
+    font-weight: bolder;
+}
