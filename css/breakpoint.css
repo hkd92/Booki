@@ -72,7 +72,7 @@
     }
     .footer__card > *{
         flex-basis: 100%;
-        padding: 0 30px;
+        padding: 0 20px;
     }        
     .header__nav{
         justify-content: center;
