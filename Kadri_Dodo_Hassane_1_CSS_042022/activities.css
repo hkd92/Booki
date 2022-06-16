@@ -8,9 +8,7 @@
     grid-template-areas: 
     "big1 medium1 big2 small2"
     "big1 medium1 big2 medium2"
-    "big1 small1 big2  medium2"
-    
-    ;
+    "big1 small1 big2  medium2";
    }
    .child__card{
        padding-bottom: 30px ;
