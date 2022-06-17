@@ -16,6 +16,9 @@
     .populaire{
         border-radius: 0px;
     }
+    .footer__card{
+        padding: 0 20px;
+    }
     
     .activite__container{
         margin-bottom: 50px;
